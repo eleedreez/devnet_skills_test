@@ -1,4 +1,4 @@
-# devnet_skills_test
+# GitHub
 Task 1 - GitHub Task Description Manage GitHub scripts and documents Task 1 Screenshot
 
 Task Preparation Create a folder named "Devasc_Skills" in the DEVASC virtual machine. Start a Git repository in the "Devasc_Skills" folder.
