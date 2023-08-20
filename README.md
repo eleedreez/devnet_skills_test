@@ -21,14 +21,14 @@ Task Troubleshooting [...]
 Task Verification [...]
 
 # Docker
-# Task 3: Docker
-# Task name: Create Docker Image with Apache2 and Ansible
-# Task preparation:
+## Task 3: Docker
+## Task name: Create Docker Image with Apache2 and Ansible
+## Task preparation:
 Ensure you have Docker installed on your system.
 Create an Ansible playbook (playbook.yml) to configure Apache2 and other necessary settings.
 Prepare an index.html file and place it inside a directory named files, which will be copied to the Apache2 web server during container creation.
 Create a Dockerfile to define the Docker image build process.
-# Task implementation:
+## Task implementation:
 start by using the official Ansible base image (ubuntu:latest) to ensure Ansible is available within the container.
 Install Ansible and other required packages within the Docker image.
 Copy the Ansible playbook (playbook.yml) and the files directory to the container.
@@ -36,14 +36,14 @@ Set the working directory to the Ansible playbook directory (/ansible).
 Run the Ansible playbook (playbook.yml) inside the container to configure Apache2 and other settings.
 Install Apache2 within the container and expose port 8088.
 Start the Apache2 service in the foreground to keep the container running.
-# Task troubleshooting:
+## Task troubleshooting:
 During the implementation of the Docker image creation, a few potential issues may arise:
 
 **Ansible Playbook Errors:** Ensure that the Ansible playbook (playbook.yml) is correctly written and doesn't contain syntax errors or logical issues.
 **Package Installation Issues**: Verify that all necessary packages are installed in the Docker image, including Ansible and Apache2.
 File Copying Problems: Ensure that the index.html file is placed in the correct location (files directory) and is correctly copied to the Apache2 web server directory during the Ansible playbook execution.
 **Port Mapping Conflicts:** If port 8088 is already in use on the host, the container may not start correctly. Ensure that the port is available or use a different port for mapping.
-# Task verification:
+## Task verification:
 After building and running the Docker image, I verify the results by:
 
 Access the Apache2 web server by visiting http://localhost:8088 in my web browser. after which I was able to see the content of the index.html file served by Apache2.
